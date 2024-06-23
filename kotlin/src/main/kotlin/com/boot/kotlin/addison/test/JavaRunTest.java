@@ -1,5 +1,8 @@
 package com.boot.kotlin.addison.test;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 public class JavaRunTest {
 
     public static void main(String[] args) {
@@ -19,5 +22,11 @@ public class JavaRunTest {
 
         System.out.println(sum);
         System.out.println("소요 시간 : " + (endCurrentMills - startCurrentMills));
+    }
+    
+    // @NotNull 어노테이션 사용하여 NotNull 임을 보장
+    public @NotNull String testMethod() {
+
+        return null;
     }
 }
